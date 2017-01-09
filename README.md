@@ -34,7 +34,35 @@ Ex4: Neural network training and prediction
      We use this term to find how much the parameters need to change. Finally, once the parameters are
      trained, we run feedforward propagation to create the neural network predictions.
      
-Ex5: SVM, Kernels
-     Example: S
+Ex7: Regularized linear regression and bias/variance
+     In this assignment we develop an understanding of bias and variance by graphing the training error
+     and the cross validation (CV) error as we train the parameters. In the case of high bias, our equation is too
+     generalized and cannot properly fit the training data. This leads to overly high training and CV error.
+     In the case of high variance, we see this when our training error becomes low, but our CV error becomes high
+     as the training set becomes overfit. These trends can be seen when graphing our errors as we perform training.
+     
+Ex6: SVM, Kernels
+     Example: We have already looked at logistic regression for classification. Support vector machines (SVMs)
+     similar in that they are used for classification, however they do not output a probability of something, 
+     they only focus on creating the best classification boundary possible. Another concept with SVMs is adding
+     kernels, often gaussian kernels. These can effectively be applied to one set of points to create a 
+     decision boundary around the points.
+ 
+Ex7: K-means clustering, PCA
+     Example: The purpose of K-means clustering is to group data in an unsupervised manner (that is to say, we do
+     not know what class our training data belongs to). This can be helpful for image compression (grouping color
+     categories for smaller size image files), analyzing news stories to find trending topics, etc. Principal
+     Component Analysis is another machine learning technique that is used to take data with a large number of
+     dimensions and to project this data into a lower dimension, also effectively compressing it. This is
+     performed by using the svd function in Matlab to define which dimensions will contain the most data.
+     
+Ex 8: Anomaly Detection and recommenders
+     Example: An example of anomaly detection is an engine manufacturer. Each engine is inspected for its 
+     power output, fuel and air consumption, throttle response, temperature range, etc. By modeling gaussian curves
+     on the data we might notice points far out to the left or right on these gaussian distributions. These would
+     be the anomalies. This can also be performed with PCA for possibly improved results. 
+          Recommenders are a different topic; they cover what Netflix might recommend to a viewer based on their
+     movie interests. Recommenders go into a theory of in-situ updating parameters as data is gathered from viewer
+     choices.
      
 
